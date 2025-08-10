@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FurniSpace - Modern Furniture</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #333;
+  }
+
+  header {
+    background: linear-gradient(135deg, #2e2e2e, #444);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  nav {
+    background: #6b4f4f;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #ffdbac;
+  }
+
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .content {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+
+  .sidebar {
+    flex: 1;
+    background: #f5e6d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    nav a {
+      display: block;
+      padding: 10px 0;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .container {
+      flex-direction: column;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>FurniSpace - Modern Furniture</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Products</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+  <div class="content">
+    <h2>Welcome to FurniSpace</h2>
+    <p>Discover elegant, modern, and comfortable furniture pieces for your home and office. Our designs blend style with functionality to give you the perfect interior look.</p>
+    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353" alt="Modern Furniture">
+  </div>
+  <div class="sidebar">
+    <h3>Latest Offers</h3>
+    <p>Get up to 40% off on selected sofas, dining tables, and beds this month.</p>
+    <h3>Contact Us</h3>
+    <p>Email: support@furnispace.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </div>
+</div>
+
+</body>
+</html>
